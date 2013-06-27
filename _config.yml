@@ -1,4 +1,5 @@
-markdown: rdiscount
+markdown:      maruku
+markdown_ext:  markdown,mkd,mkdn,md
 pygments: true
 permalink: /posts/:title
 auto: true

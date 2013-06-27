@@ -1,309 +1,293 @@
-@charset "UTF-8";
+/*
+font-family:'Avenir Next W01 Thin';
+font-family:'AvenirNextW01-ThinItali';
+font-family:'AvenirNextLTW01-Regular';
+font-family:'AvenirNextLTW01-Italic';
+font-family:'Avenir Next LT W01 Bold';
+font-family:'AvenirNextLTW01-BoldIta';
+*/
+
 body {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin: 0;
-    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    font-family: 'AvenirNextLTW01-Regular', Helvetica, sans-serif;
 }
 
 a {
-    color: #227ce8;
+    color: green;
 }
 
-.sidebar {
-    position: fixed;
-    left: 15px;
-    top: 15px;
-    width: 80px;
-    font-family: Helvetica, sans-serif;
+ul {
+    padding-left: 20px;
 }
 
-.sidebar a {
-    text-decoration: none;
+b, strong {
+    color: #555;
 }
 
-.sidebar img {
-    padding: 0 3px;
-    border: 0;
-}
-
-.sidebar .avatar {
+li {
     padding: 0;
-    margin-left: 2px;
-    border-radius: 5px;
+    list-style-type: square;
+    font-size: 20px;
+    margin-left: 0;
+    line-height: 160%;
 }
 
-.sidebar .name {
-    text-transform: uppercase;
-    margin: 10px 0 20px 0;
-}
-
-.sidebar .name #fname {
-    padding-left: 1px;
-    font-size: 23px;
-    letter-spacing: 5px;
-    color: black;
-}
-
-.sidebar .name #lname {
-    font-size: 17px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: black;
-}
-
-.sidebar .meta a {
-    margin-left: 0px;
-    color: black;
-}
-
-.sidebar .meta a:hover {
-    color: #227ce8;
-}
-
-.sidebar .meta {
-    margin-left: 4px;
-}
-
-.sidebar .meta .icon {
-    margin-right: 6px;
-}
-
-.sidebar .sections {
-    margin: 15px 0 0 0;
-}
-
-.sidebar .sections a {
-    padding: 3px 0;
-    color: black;
-    font-weight: bold;
-    font-size: 12px;
-    display: block;
-}
-
-.sidebar .sections a:hover {
-    color: #227ce8;
-}
-
-.sidebar .sections ul {
-    margin: 0;
-    padding: 0;
-}
-
-.sidebar .sections li {
-    list-style: none;
-    margin-bottom: 7px;
-}
-
-.content {
-    max-width: 650px;
-    margin-left: 110px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-
-.content h1 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-.content h1 a {
-    color: #111;
-    text-decoration: none;
-}
-
-.content h2 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-.content h2 a {
-    color: #111;
-    text-decoration: none;
-}
-
-.content h3 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-.content h3 a {
-    color: #111;
-    text-decoration: none;
-}
-
-.content h4 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-.content h4 a {
-    color: #111;
-    text-decoration: none;
-}
-
-.content h1 {
-    font-size: 36px;
-    margin: 18px 0 5px 0;
-}
-
-.content h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.content h3 {
-    color: #777;
-    font-size: 25px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 1.2em;
-    line-height: 1.7em;
-}
-
-.content p code {
-    font-size: 12px;
-    background-color: #eeeeee;
-    border: 1px solid #777777;
-    border-radius: 3px;
-    padding: 2px 3px;
-}
-
-.content img {
-    padding: 3px;
-    border: 1px solid #eeeeee;
-    max-width: 100%;
-}
-
-.content hr {
-    border: 0;
-    height: 6px;
-    background-image: url("/images/hr.png");
-    background-repeat: repeat-x;
-    margin: 2em 3em;
-}
-
-.content li {
-    margin-bottom: 10px;
-    line-height: 1.4em;
-}
-
-.content blockquote {
+blockquote {
+    color: #000;
     font-style: italic;
+}
+
+::selection {
+    background-color: #2B2B2B;
+    color: #eee;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    margin: 100px 0 35px 0;
+}
+.header a, .header b {
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+}
+.header a:hover, .header a:hover b {
+    color: green;
+}
+
+.name a {
+    font-size: 30px;
+    font-family: 'Avenir Next W01 Thin';
+    font-weight: normal;
+}
+.name b {
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: normal;
+}
+
+.menu {
+    padding: 0;
+    margin: 5px 0;
+    font-family: 'Avenir Next W01 Thin';
+    font-weight: normal;
+}
+.menu li {
+    display: inline;
+    padding-right: 15px;
+}
+.menu li a{
+    font-size: 16px;
+}
+
+.social {
+    margin: -37px 0 0 0;
+    padding: 0;
+    padding-top: 2px;
+    float: right;
+}
+.social li {
+    display: inline;
+    font-size: 20px;
+}
+
+.container {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #2B2B2B;
+    background-size: cover;
+    height: 200px;
+    box-shadow: inset 0 0 30px rgba(0,0,0,.90);
+}
+
+.aside {
+    margin-bottom: 25px;
+    background-color: #eee;
+    padding: 10px;
     font-size: 14px;
-    padding: .25em 1em;
-    margin: 1em 1em 0 1em;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 40px -30px 30px -30px;
+    padding: 15px 30px 15px 23px;
+    border-left: 7px solid #eee;
+    font-weight: 400;
     color: #444;
 }
 
-.content blockquote cite:before {
-    content: '— ';
+h2 {
+    margin: 50px -30px 20px -30px;
+    padding: 10px 30px 10px 25px;
+    border-left: 5px solid #eee;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
 }
 
-.content blockquote cite {
-    display: block;
-    margin-top: .5em;
-    text-align: right;
-    color: #111;
+h3 {
+    margin: 50px -30px 20px -27px;
+    padding: 15px 30px;
+    border-left: 3px solid #eee;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+}
+
+.content {
+
+}
+.content i, .content em {
+    font-family: 'AvenirNextLTW01-Italic';
     font-style: normal;
 }
-
-.content .byline {
-    margin-bottom: 17px;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    padding-left: 0px;
-    font-size: 17px;
-    color: #777;
+.content b, .content strong {
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: normal;
 }
-
-.content .aside {
-    background-color: #eeeeee;
-    padding: 14px;
+.content em b {
+    font-family: 'AvenirNextLTW01-BoldIta';
+    font-weight: normal;
+    font-style: normal;
+}
+.content p {
+    font-size: 20px;
+    line-height: 160%;
+    margin: 25px 0;
+}
+.content img, .content video {
+    margin: 0 -60px;
+    margin-bottom: -10px;
+    max-width: 770px;
+    box-shadow: 0 0 5px #eee;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.content pre {
+    padding: 10px 20px;
+    margin: 0 50px;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+}
+.content code {
+    color: #444;
+    font-size: 16px;
+    padding: 0 3px;
+}
+.content .when + p:first-of-type {
+    display: inline;
+}
+.when {
     font-size: 14px;
-    margin: 5px 0 15px 0;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.6em;
+    text-transform: uppercase;
+    color: #999;
+    width: 150px;
+    display: block;
+    text-align: right;
+    margin: 23px 0 0 -210px;
+    float: left;
+}
+.content hr{
+    border: 0;
+    height: 6px;
+    background-image: url('/images/hr.png');
+    background-repeat: repeat-x;
+    margin: 2em 3em;
+}
+.meta {
+    margin: 75px -30px 25px -30px;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    color: #eee;
+    text-align: center;
+}
+.meta a {
+    font-size: 40px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+}
+.meta a:hover {
+    color: green;
+}
+.meta .block {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 20px;
+    width: 150px;
+    padding: 0 10px;
+}
+.meta .block div {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.colophon {
+    margin: 75px -30px -45px -30px;
+    text-align: center;
+}
+.colophon .color, .colophon .typeface {
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: 3px;
+}
+.colophon .typeface b {
+    background-color: #fbfbfb;
+    display: block;
+    width: 100px;
+    height: 19px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    color: #ccc;
+}
+.clear {
+    height: 50px;
 }
 
-.content .listing {
-    margin: 10px 0 0 0;
+.listing {
+    margin: 25px 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
 }
-
-.content .listing ul {
-    margin: 0;
-    padding: 0;
-}
-
-.content .listing li {
-    font-size: 13px;
-    list-style: none;
-    padding: 5px 3px;
-    margin: 0;
-    color: #777777;
+.listing li {
+    list-style-type: none;
+    padding: 7px 5px;
+    font-size: 18px;
     border-bottom: 1px solid #eee;
 }
-
-.content .listing li span {
-    float: right;
-}
-
-.content .listing a {
+a {
     text-decoration: none;
 }
-
-.content .listing a:hover {
-    text-decoration: underline;
-}
-
-.content .meta {
-    margin: 30px 0;
-    padding: 10px 0;
-    font-family: Helvetica, sans-serif;
-}
-
-.content .meta p {
-    line-height: 1.4;
-    font-size: 14px;
-    margin-top: 0px;
-}
-
-.content .meta img {
-    position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-right: 10px;
-    margin-left: -60px;
-    border-radius: 4px;
-}
-
-.content .meta .copy {
-    padding-left: 60px;
-}
-
-.content .meta iframe {
-    padding-left: 5px;
-}
-
-.content .talk-design .color div {
-    float: left;
-    margin-right: 10px;
-    padding: 5px 15px;
-    border: 1px solid #000;
-    font-family: Helvetica, sans-serif;
+.listing span {
+    padding-top: 2px;
+    float: right;
+    text-transform: uppercase;
     font-size: 12px;
-    font-weight: bold;
+    color: #999;
 }
 
-.content .talk-design .color .white {
-    color: #fff;
+.about-avatar {
+    float: left;
+    padding: 7px 0px 150px 0;
+}
+.about-avatar img {
+    margin-left: -150px;
+    width: 125px;
+    border: none;
+    padding: 0;
 }
